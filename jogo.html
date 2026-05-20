@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ERRO 404: Mundo Não Encontrado - jogo narrativo interativo desenvolvido para apresentação no SENAI Betim." />
+  <title>ERRO 404 | jogo.html</title>
+  <link rel="stylesheet" href="404.css" />
+</head>
+<body>
+  <div class="background-noise" aria-hidden="true"></div>
+  <div class="overlay" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+  <canvas id="matrixCanvas" aria-hidden="true"></canvas>
+  <div id="glitchContainer" aria-hidden="true"></div>
+  <div id="transitionLayer" aria-hidden="true"><div class="transition-card"><span>carregando setor</span><strong id="transitionText">...</strong></div></div>
+
+  <header class="hud" aria-label="Informações do sistema">
+    <div class="hud-left">ERRO_404.exe</div>
+    <div class="hud-center" id="hudStatus">SISTEMA INSTÁVEL</div>
+    <div class="hud-right">SENAI BETIM</div>
+  </header>
+
+  <div id="startCutscene" class="start-cutscene" aria-hidden="true">
+    <div class="wide-city-cutscene">
+      <div class="wc-sky">
+        <span class="wc-moon"></span>
+        <span class="wc-cloud cloud-a"></span>
+        <span class="wc-cloud cloud-b"></span>
+        <span class="wc-cloud cloud-c"></span>
+        <span class="wc-rain rain-a"></span>
+        <span class="wc-rain rain-b"></span>
+        <span class="wc-mist mist-a"></span>
+        <span class="wc-mist mist-b"></span>
+      </div>
+
+      <div class="wc-air-road air-road-a"><span></span><span></span><span></span></div>
+      <div class="wc-air-road air-road-b"><span></span><span></span></div>
+
+      <div class="wc-city wc-far-buildings">
+        <span class="wcb f1"></span><span class="wcb f2"></span><span class="wcb f3"></span>
+        <span class="wcb f4"></span><span class="wcb f5"></span><span class="wcb f6"></span>
+        <span class="wcb f7"></span><span class="wcb f8"></span><span class="wcb f9"></span>
+        <span class="wcb f10"></span><span class="wcb f11"></span><span class="wcb f12"></span>
+      </div>
+
+      <div class="wc-city wc-mid-buildings">
+        <span class="wcb m1"></span><span class="wcb m2"><b>404</b></span><span class="wcb m3"></span>
+        <span class="wcb m4"></span><span class="wcb m5"><b>DATA</b></span><span class="wcb m6"></span>
+        <span class="wcb m7"></span><span class="wcb m8"><b>HOTEL</b></span><span class="wcb m9"></span>
+      </div>
+
+      <div class="wc-city wc-near-blocks">
+        <span class="wcb n1"><i></i></span><span class="wcb n2"><i></i></span><span class="wcb n3"><i></i></span>
+        <span class="wcb n4"><i></i></span><span class="wcb n5"><i></i></span><span class="wcb n6"><i></i></span>
+      </div>
+
+      <div class="city-traffic-system">
+        <div class="avenue avenue-left">
+          <span class="road-glow"></span>
+          <span class="moving-car small c1"><i></i></span>
+          <span class="moving-car small c2"><i></i></span>
+          <span class="moving-car small c3"><i></i></span>
+        </div>
+        <div class="avenue avenue-right">
+          <span class="road-glow"></span>
+          <span class="moving-car small c4"><i></i></span>
+          <span class="moving-car small c5"><i></i></span>
+          <span class="moving-car small c6"><i></i></span>
+        </div>
+        <div class="avenue avenue-center">
+          <span class="road-glow"></span>
+          <span class="moving-car mid c7"><i></i></span>
+          <span class="moving-car mid c8"><i></i></span>
+        </div>
+        <span class="distant-headlight h1"></span>
+        <span class="distant-headlight h2"></span>
+        <span class="distant-headlight h3"></span>
+        <span class="distant-headlight h4"></span>
+        <span class="distant-headlight h5"></span>
+        <span class="distant-headlight h6"></span>
+      </div>
+
+      <div class="wc-overlook">
+        <span class="wc-railing rail-top"></span>
+        <span class="wc-railing rail-bottom"></span>
+        <span class="wc-rail-post p1"></span>
+        <span class="wc-rail-post p2"></span>
+        <span class="wc-rail-post p3"></span>
+        <span class="wc-rail-post p4"></span>
+        <span class="wc-floor-grid"></span>
+        <span class="wc-wet-reflection r1"></span>
+        <span class="wc-wet-reflection r2"></span>
+      </div>
+
+      <div class="real-back-character detailed-person" aria-hidden="true">
+        <span class="person-shadow"></span>
+        <span class="person-rim"></span>
+
+        <span class="person-leg left"></span>
+        <span class="person-leg right"></span>
+        <span class="person-knee left"></span>
+        <span class="person-knee right"></span>
+        <span class="person-shoe left"></span>
+        <span class="person-shoe right"></span>
+
+        <span class="person-coat-back"></span>
+        <span class="person-coat-bottom"></span>
+        <span class="person-coat-fold left"></span>
+        <span class="person-coat-fold right"></span>
+        <span class="person-hood"></span>
+        <span class="person-hood-inner"></span>
+        <span class="person-neck"></span>
+        <span class="person-head"></span>
+        <span class="person-hair"></span>
+        <span class="person-hair-detail"></span>
+
+        <span class="person-arm left"></span>
+        <span class="person-arm right"></span>
+        <span class="person-sleeve left"></span>
+        <span class="person-sleeve right"></span>
+        <span class="person-hand left"></span>
+        <span class="person-hand right"></span>
+
+        <span class="person-backpack"></span>
+        <span class="person-strap left"></span>
+        <span class="person-strap right"></span>
+        <span class="person-backpack-pocket"></span>
+        <span class="person-backpack-mark"></span>
+        <span class="person-neck-light"></span>
+      </div>
+
+      <div class="wc-particles">
+        <span>0101</span><span>NULL</span><span>404</span><span>MEMORY</span><span>ERROR</span><span>USER</span>
+      </div>
+
+      <div class="wc-glitch">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="wc-flash"></div>
+      <div class="wc-vignette"></div>
+      <div class="wc-scanlines"></div>
+      <div class="cutscene-status">SISTEMA: INSTÁVEL</div>
+      <div class="cutscene-skip">ENTER para pular</div>
+    </div>
+  </div>
+
+
+  <main id="game" class="game-shell">
+    <section class="screen active" id="menu" data-progress="0" data-status="MENU INICIAL">
+      <div class="menu-content panel">
+        <p class="system-text">inicializando experiência narrativa...</p>
+        <h1 class="glitch title-404">404</h1>
+        <p class="subtitle">Mundo Não Encontrado</p>
+        <p class="intro-text">
+          Uma experiência narrativa interativa sobre memória, falhas de sistema e escolhas. Desenvolvido em HTML, CSS e JavaScript para apresentação no SENAI Betim.
+        </p>
+        <div class="menu-buttons">
+          <button type="button" onclick="startGame()">INICIAR JOGO</button>
+          <button type="button" onclick="continueGame()" id="continueButton" disabled>CONTINUAR</button>
+          <button type="button" onclick="goToScreen('credits')">CRÉDITOS</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="intro" data-progress="10" data-status="MEMÓRIA AUSENTE">
+      <div class="dialog-box">
+        <span class="chapter">CAPÍTULO 01</span>
+        <h2>Despertar</h2>
+        <p>Você acorda em uma sala escura. As luzes piscam lentamente e o som de máquinas antigas ecoa pelas paredes.</p>
+        <p>Não há lembranças claras. Seu nome, sua origem e o motivo de estar ali foram apagados.</p>
+        <div class="terminal">&gt; usuário_detectado: desconhecido<br>&gt; memória_local: corrompida<br>&gt; mensagem: VOCÊ NÃO DEVERIA EXISTIR</div>
+        <div class="choices">
+          <button type="button" onclick="goToScreen('room')">ANALISAR A SALA</button>
+          <button type="button" onclick="goToScreen('corridor')">SAIR IMEDIATAMENTE</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="room" data-progress="22" data-status="ÁREA 01">
+      <div class="dialog-box">
+        <span class="chapter">ÁREA 01</span>
+        <h2>Sala Abandonada</h2>
+        <p>Monitores quebrados exibem fragmentos de uma história interrompida. Em uma tela, existe uma gravação incompleta.</p>
+        <p class="npc-text">“O protagonista sumiu. O sistema não sabe continuar sem ele.”</p>
+        <div class="choices">
+          <button type="button" onclick="goToScreen('corridor')">SEGUIR PARA O CORREDOR</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="corridor" data-progress="34" data-status="ÁREA DESCONHECIDA">
+      <div class="dialog-box">
+        <span class="chapter">ÁREA DESCONHECIDA</span>
+        <h2>Corredor</h2>
+        <p>Cabos atravessam o teto. Portas abrem e fecham sozinhas. A cada passo, o ambiente parece renderizar com atraso.</p>
+        <p>Ao fundo, duas rotas aparecem: uma leva à cidade; outra, a um terminal de manutenção.</p>
+        <div class="choices">
+          <button type="button" onclick="goToScreen('city')">IR PARA A CIDADE</button>
+          <button type="button" onclick="goToScreen('terminalRoom')">VERIFICAR TERMINAL</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="terminalRoom" data-progress="45" data-status="TERMINAL ATIVO">
+      <div class="dialog-box">
+        <span class="chapter">SUBSISTEMA</span>
+        <h2>Terminal de Manutenção</h2>
+        <p>O terminal contém registros sobre o colapso. O sistema tenta substituir personagens ausentes por cópias instáveis.</p>
+        <div class="terminal">&gt; corrupção_global: 78%<br>&gt; protagonista_original: ausente<br>&gt; substituto_em_execução: você</div>
+        <div class="choices">
+          <button type="button" onclick="goToScreen('city')">CONTINUAR PARA A CIDADE</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="city" data-progress="58" data-status="SETOR CENTRAL">
+      <div class="dialog-box">
+        <span class="chapter">SETOR CENTRAL</span>
+        <h2>Cidade Corrompida</h2>
+        <p>Relógios estão parados. Placas mudam de texto sozinhas. Pessoas caminham sem expressão, repetindo as mesmas rotas.</p>
+        <p class="npc-text">Um homem observa você no centro da rua. Ele parece reconhecer sua falha.</p>
+        <div class="choices">
+          <button type="button" onclick="goToScreen('luno')">APROXIMAR-SE DO HOMEM</button>
+          <button type="button" onclick="goToScreen('alone')">IGNORAR E CONTINUAR</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="luno" data-progress="70" data-status="NPC IDENTIFICADO">
+      <div class="dialog-box">
+        <span class="chapter">NPC IDENTIFICADO</span>
+        <h2 class="npc">Luno</h2>
+        <p>“Então você acordou... O mundo está quebrando aos poucos. Pessoas desapareceram e o sistema começou a criar substitutos.”</p>
+        <p>“Você não é o erro. Você é a tentativa desesperada de corrigir um erro maior.”</p>
+        <div class="choices">
+          <button type="button" onclick="goToScreen('truth')">DESCOBRIR A VERDADE</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="alone" data-progress="70" data-status="ROTA SOLITÁRIA">
+      <div class="dialog-box">
+        <span class="chapter">ROTA ALTERNATIVA</span>
+        <h2>Silêncio</h2>
+        <p>Você ignora o homem. As falhas aumentam. Prédios somem por segundos e vozes começam a repetir seu nome, mesmo que você não se lembre dele.</p>
+        <div class="choices">
+          <button type="button" onclick="goToScreen('truth')">ENTRAR NO NÚCLEO</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="truth" data-progress="84" data-status="NÚCLEO EXPOSTO">
+      <div class="dialog-box">
+        <span class="chapter">NÚCLEO</span>
+        <h2>A Verdade</h2>
+        <p>Arquivos escondidos revelam que o antigo protagonista desapareceu. Sem ele, a narrativa perdeu continuidade e o mundo começou a colapsar.</p>
+        <p class="warning blink">“VOCÊ FOI CRIADO PARA SUBSTITUÍ-LO.”</p>
+        <div class="choices">
+          <button type="button" onclick="goToScreen('choice')">ACESSAR DECISÃO FINAL</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="choice" data-progress="95" data-status="DECISÃO FINAL">
+      <div class="dialog-box">
+        <span class="chapter">DECISÃO FINAL</span>
+        <h2>Núcleo do Sistema</h2>
+        <p>O sistema oferece duas possibilidades: restaurar o mundo aceitando ser esquecido, ou deixar tudo acabar para impedir novas substituições.</p>
+        <div class="choices">
+          <button type="button" onclick="finishGame('goodEnding')">RESTAURAR SISTEMA</button>
+          <button type="button" onclick="finishGame('badEnding')">DEIXAR O SISTEMA ACABAR</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="goodEnding" data-progress="100" data-status="RESTAURAÇÃO CONCLUÍDA">
+      <div class="dialog-box ending">
+        <h2 class="glitch">Restauração</h2>
+        <p>O sistema reinicia. A cidade volta ao normal, os personagens retomam suas rotas e as falhas desaparecem.</p>
+        <p>Mas ninguém se lembra de você. O mundo foi salvo, mesmo que sua existência tenha sido apagada.</p>
+        <div class="choices">
+          <button type="button" onclick="restartGame()">JOGAR NOVAMENTE</button>
+          <button type="button" onclick="goToScreen('credits')">VER CRÉDITOS</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="badEnding" data-progress="100" data-status="MUNDO NÃO ENCONTRADO">
+      <div class="dialog-box ending danger">
+        <h2 class="glitch">Erro 404</h2>
+        <p>O sistema entra em colapso. Estruturas desaparecem, personagens deixam de existir e a tela final exibe apenas uma mensagem.</p>
+        <p class="warning">Mundo não encontrado.</p>
+        <div class="choices">
+          <button type="button" onclick="restartGame()">REINICIAR</button>
+          <button type="button" onclick="goToScreen('credits')">VER CRÉDITOS</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="credits" data-progress="0" data-status="CRÉDITOS">
+      <div class="dialog-box credits-box">
+        <span class="chapter">APRESENTAÇÃO</span>
+        <h2>Créditos</h2>
+        <p><strong>Projeto:</strong> ERRO 404: Mundo Não Encontrado</p>
+        <p><strong>Formato:</strong> Jogo narrativo interativo em HTML, CSS e JavaScript.</p>
+        <p><strong>Instituição:</strong> SENAI Betim.</p>
+        <p><strong>Objetivo:</strong> demonstrar lógica de programação, interatividade, tomada de decisão, narrativa ramificada e construção de interface web.</p>
+        <div class="choices">
+          <button type="button" onclick="goToScreen('menu', false)">VOLTAR AO MENU</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="control-bar" aria-label="Controles do jogo">
+    <div class="progress-wrap" aria-label="Progresso da história">
+      <span id="progressLabel">Progresso: 0%</span>
+      <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
+    </div>
+    <div class="control-actions">
+      <button type="button" class="small-button" onclick="goToScreen('menu', false)">Menu</button>
+      <button type="button" class="small-button" onclick="restartGame()">Reiniciar</button>
+      <button type="button" class="small-button" onclick="toggleEffects()" id="effectsButton">Efeitos: ON</button>
+      <button type="button" class="small-button" onclick="toggleAudio()" id="audioButton">Áudio: OFF</button>
+    </div>
+  </footer>
+
+  <script src="404.js"></script>
+</body>
+</html>
