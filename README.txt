@@ -1,33 +1,36 @@
-#  ERRO 404: Mundo Não Encontrado
+
+
+````md
+# 🕹️ ERRO 404: Mundo Não Encontrado
 
 > *“Você não deveria existir aqui.”*
 
-Um RPG psicológico em pixel art onde a realidade do jogo está quebrando.
+Um RPG psicológico em pixel art onde a realidade do jogo está quebrando.  
 NPCs esquecem quem são. Regiões desaparecem. O sistema tenta substituir um protagonista perdido… por você.
 
 ---
 
-# 🎮 Sobre o Projeto
+## 🎮 Sobre o Projeto
 
 **ERRO 404: Mundo Não Encontrado** é uma experiência narrativa inspirada em:
 
-* jogos psicológicos;
-* horror existencial;
-* glitches digitais;
-* distorções de memória;
-* mundos corrompidos.
+- jogos psicológicos;
+- horror existencial;
+- glitches digitais;
+- distorções de memória;
+- mundos corrompidos.
 
-O projeto foi desenvolvido utilizando tecnologias web puras, focando em:
+O projeto foi desenvolvido utilizando tecnologias web puras, com foco em:
 
-* ambientação imersiva;
-* efeitos visuais leves;
-* estabilidade;
-* interface futurista;
-* narrativa interativa.
+- ambientação imersiva;
+- efeitos visuais leves;
+- estabilidade;
+- interface futurista;
+- narrativa interativa.
 
 ---
 
-# 🧩 História
+## 🧩 História
 
 Você desperta em um mundo instável sem lembrar quem é.
 
@@ -43,56 +46,54 @@ Agora o sistema tenta usar você como substituto.
 
 ---
 
-# 🌌 Ambientações
+## 🌌 Ambientações
 
-## 🏙 Cidade Inicial
+### 🏙 Cidade Inicial
 
 Um lugar aparentemente normal… até os erros começarem.
 
-* relógios andando ao contrário;
-* músicas travando;
-* placas mudando de texto;
-* NPCs repetindo falas.
+- relógios andando ao contrário;
+- músicas travando;
+- placas mudando de texto;
+- NPCs repetindo falas.
 
 ---
 
-## 🌲 Floresta Corrompida
+### 🌲 Floresta Corrompida
 
 Uma região viva e instável.
 
-* árvores piscam como pixels quebrados;
-* caminhos mudam de lugar;
-* inimigos congelam;
-* paredes podem desaparecer.
+- árvores piscando como pixels quebrados;
+- caminhos mudando de lugar;
+- inimigos congelando;
+- paredes desaparecendo.
 
 ---
 
-## ⚫ Zona Vazia
+### ⚫ Zona Vazia
 
 Um espaço silencioso e abandonado.
 
-Sem música.
-Sem NPCs.
-Sem inimigos.
+Sem música. Sem NPCs. Sem inimigos.
 
 Apenas fragmentos de arquivos destruídos.
 
 ---
 
-## 💀 Núcleo do Sistema
+### 💀 Núcleo do Sistema
 
 O coração da corrupção.
 
-* sprites incompletos;
-* diálogos falhando;
-* chão desaparecendo;
-* personagens conscientes de que estão dentro de um jogo.
+- sprites incompletos;
+- diálogos falhando;
+- chão desaparecendo;
+- personagens conscientes de que estão dentro de um jogo.
 
 ---
 
-# 👤 Personagens
+## 👤 Personagens
 
-## 🔹 Luno
+### 🔹 Luno
 
 Um NPC misterioso que evita falar sobre o passado.
 
@@ -100,19 +101,19 @@ Um NPC misterioso que evita falar sobre o passado.
 
 ---
 
-## 🔹 Mira
+### 🔹 Mira
 
 Uma garota que lembra de eventos que nunca aconteceram.
 
 Ela percebe que:
 
-* o mundo reinicia;
-* pessoas desaparecem;
-* você não pertence àquele lugar.
+- o mundo reinicia;
+- pessoas desaparecem;
+- você não pertence àquele lugar.
 
 ---
 
-## 🔹 O Administrador
+### 🔹 O Administrador
 
 A entidade responsável por impedir que o sistema seja destruído.
 
@@ -122,106 +123,106 @@ Ele acredita que:
 
 ---
 
-# ⚙️ Tecnologias Utilizadas
+## ⚙️ Tecnologias Utilizadas
 
-## 🌐 Front-end
+### 🌐 Front-end
 
-* HTML5
-* CSS3
-* JavaScript Vanilla
-
----
-
-## 🎨 Recursos Visuais
-
-* CSS Animations
-* Keyframes
-* Neon UI
-* Efeitos Glitch
-* Transições suaves
-* Sombras digitais
-* Fundo cinematográfico
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
 
 ---
 
-# 🧠 Funcionalidades
+### 🎨 Recursos Visuais
 
-## ✅ Sistema Visual
-
-* Interface neon futurista
-* Painel central responsivo
-* Cursor personalizado
-* Efeitos glitch leves
-* Vinheta cinematográfica
-
----
-
-## ✅ Sistema do Jogo
-
-* Navegação entre telas
-* Tela cheia com tecla **F**
-* Transições lentas e suaves
-* Sistema estável sem travamentos
+- CSS Animations
+- Keyframes
+- UI neon futurista
+- Efeitos glitch
+- Transições suaves
+- Sombras digitais
+- Fundo cinematográfico
 
 ---
 
-# 🚀 Melhorias da Versão v11
+## 🧠 Funcionalidades
 
-## 🎨 Melhorias Visuais
+### ✅ Sistema Visual
 
-* acabamento neon profissional;
-* brilho dinâmico nos botões;
-* sombras digitais;
-* efeitos cinematográficos;
-* animações suaves.
-
----
-
-## ⚡ Melhorias de Performance
-
-* remoção de scripts pesados;
-* sem loops infinitos;
-* sem travamentos;
-* sem bibliotecas externas;
-* otimização geral do sistema.
+- Interface neon futurista
+- Painel central responsivo
+- Cursor personalizado
+- Efeitos glitch leves
+- Vinheta cinematográfica
 
 ---
 
-# 🛠 Como Executar o Projeto
+### ✅ Sistema do Jogo
 
-## 1️⃣ Clonar o Repositório
+- Navegação entre telas
+- Tela cheia com tecla **F**
+- Transições suaves
+- Sistema leve e estável
 
-```bash id="mgl50t"
+---
+
+## 🚀 Melhorias da Versão v11
+
+### 🎨 Melhorias Visuais
+
+- acabamento neon profissional;
+- brilho dinâmico nos botões;
+- sombras digitais;
+- efeitos cinematográficos;
+- animações suaves.
+
+---
+
+### ⚡ Melhorias de Performance
+
+- remoção de scripts pesados;
+- sem loops infinitos;
+- sem travamentos;
+- sem bibliotecas externas;
+- sistema otimizado.
+
+---
+
+## 🛠 Como Executar o Projeto
+
+### 1. Clonar o repositório
+
+```bash
 git clone https://github.com/Gabriel-Oliveira-Duarte/Error-404.git
-```
+````
 
 ---
 
-## 2️⃣ Entrar na Pasta
+### 2. Acessar a pasta
 
-```bash id="mt6zsi"
+```bash
 cd Error-404
 ```
 
 ---
 
-## 3️⃣ Abrir o Projeto
+### 3. Abrir no navegador
 
-Execute no navegador:
+Abra o arquivo:
 
-```plaintext id="n1k4pc"
+```
 index.html
 ```
 
 ou
 
-```plaintext id="hnxq79"
+```
 404.html
 ```
 
 ---
 
-# 🎮 Controles
+## 🎮 Controles
 
 | Tecla | Função                  |
 | ----- | ----------------------- |
@@ -231,9 +232,9 @@ ou
 
 ---
 
-# 📂 Estrutura do Projeto
+## 📂 Estrutura do Projeto
 
-```plaintext id="2b8qlv"
+```txt
 Error-404/
 │
 ├── index.html
@@ -251,9 +252,9 @@ Error-404/
 
 ---
 
-# 🌐 Compatibilidade
+## 🌐 Compatibilidade
 
-## Navegadores Recomendados
+### Navegadores recomendados
 
 * Google Chrome
 * Microsoft Edge
@@ -262,9 +263,9 @@ Error-404/
 
 ---
 
-# 🎯 Objetivo do Projeto
+## 🎯 Objetivo do Projeto
 
-Projeto criado para:
+Este projeto foi criado para:
 
 * estudos de desenvolvimento web;
 * narrativa interativa;
@@ -274,8 +275,7 @@ Projeto criado para:
 
 ---
 
-
-# ⚠️ Aviso
+## ⚠️ Aviso
 
 Este jogo contém:
 
@@ -287,3 +287,5 @@ Este jogo contém:
 ---
 
 > *“Se o mundo esquecer você… você ainda existe?”*
+
+
