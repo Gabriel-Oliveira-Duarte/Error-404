@@ -1,33 +1,187 @@
-ERRO 404: Mundo Não Encontrado
-Versão v11 - Final funcional para apresentação
+# README — ERRO 404: Mundo Não Encontrado
 
-Esta versão foi feita em cima da última base estável, sem os scripts que causavam travamento.
+## Sobre o Projeto
 
-Melhorias implementadas:
-1. Melhorias visuais seguras somente com CSS:
-   - painel com acabamento neon mais profissional;
-   - botões com brilho e efeito de varredura;
-   - títulos com sombra digital;
-   - fundo com vinheta cinematográfica;
-   - entradas suaves sem redimensionar o retângulo central.
+**ERRO 404: Mundo Não Encontrado** é um RPG psicológico em pixel art com temática de corrupção digital, falhas de sistema e narrativa existencial.
 
-2. Melhorias funcionais leves:
-   - atalho F para tela cheia;
-   - aviso discreto de apresentação;
-   - manutenção das transições lentas;
-   - manutenção do painel estável;
-   - manutenção do cursor personalizado via CSS, sem bolinha e sem JavaScript.
+O jogador acorda em um mundo instável onde memórias desaparecem, regiões sofrem glitches e NPCs começam a agir como se soubessem que fazem parte de um jogo.
 
-3. Correções preservadas:
-   - sem barra interna no painel central;
-   - sem travamento após clique;
-   - sem cursor em bolinha no canto;
-   - sem MutationObserver pesado;
-   - sem loops infinitos;
-   - sem bibliotecas externas.
+Esta versão (**v11**) foi otimizada para apresentações, mantendo estabilidade, efeitos visuais leves e funcionamento sem travamentos.
 
-Como testar:
-- Abra index.html ou 404.html no navegador.
-- Clique em Iniciar Jogo.
-- Use F para tela cheia.
-- Use F11 também se preferir tela cheia do navegador.
+---
+
+# Recursos do Projeto
+
+## Ambientação
+
+* Mundo corrompido com falhas visuais
+* Efeitos de distorção digital
+* Interface estilo terminal/glitch
+* Atmosfera psicológica e misteriosa
+
+---
+
+# Funcionalidades
+
+## Sistema Visual
+
+* Painel central neon
+* Fundo cinematográfico
+* Efeitos de brilho
+* Transições suaves
+* Cursor personalizado
+
+---
+
+## Sistema do Jogo
+
+* Tela inicial
+* Navegação entre páginas
+* Sistema de tela cheia
+* Efeitos sonoros leves
+* Interface responsiva
+
+---
+
+# Tecnologias Utilizadas
+
+## Front-end
+
+* HTML5
+* CSS3
+* JavaScript Vanilla
+
+---
+
+## Recursos Visuais
+
+* CSS Animations
+* CSS Keyframes
+* Backdrop Filters
+* Gradientes e sombras neon
+
+---
+
+# Estrutura do Projeto
+
+```plaintext
+Error-404/
+│
+├── index.html
+├── 404.html
+├── jogo.html
+├── menu.html
+├── sistema.html
+│
+├── 404.css
+├── 404.js
+│
+├── README.txt
+└── assets/
+```
+
+---
+
+# Como Executar o Projeto
+
+## 1. Baixar o Projeto
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/Gabriel-Oliveira-Duarte/Error-404.git
+```
+
+Ou baixe o ZIP diretamente pelo GitHub.
+
+---
+
+## 2. Abrar a Pasta
+
+Entre na pasta do projeto:
+
+```bash
+cd Error-404
+```
+
+---
+
+## 3. Executar
+
+Abra:
+
+```plaintext
+index.html
+```
+
+ou
+
+```plaintext
+404.html
+```
+
+no navegador.
+
+---
+
+# Controles
+
+| Tecla | Função                  |
+| ----- | ----------------------- |
+| F     | Tela cheia              |
+| F11   | Tela cheia do navegador |
+| Mouse | Navegação nos menus     |
+
+---
+
+# Melhorias da Versão v11
+
+## Melhorias Visuais
+
+* Painel neon profissional
+* Efeito de brilho nos botões
+* Vinheta cinematográfica
+* Sombras digitais
+* Entradas suaves
+
+---
+
+## Melhorias Funcionais
+
+* Atalho para fullscreen
+* Estabilidade aprimorada
+* Navegação mais fluida
+* Cursor otimizado
+
+---
+
+# Correções Implementadas
+
+* Removida barra interna do painel
+* Correção de travamentos
+* Remoção de loops infinitos
+* Remoção de scripts pesados
+* Melhor desempenho geral
+
+---
+
+# Compatibilidade
+
+## Navegadores Recomendados
+
+* Google Chrome
+* Microsoft Edge
+* Opera GX
+* Firefox
+
+---
+
+# Objetivo do Projeto
+
+Projeto desenvolvido para:
+
+* estudos de desenvolvimento web;
+* narrativa interativa;
+* design de interface;
+* apresentação acadêmica.
+
